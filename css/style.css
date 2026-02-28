@@ -17,7 +17,7 @@ h1, h2, h3 {
   font-family: "Miltonian", serif;
 }
 
-p {
+p,h4{
   color: #575155;
 }
 
@@ -34,12 +34,12 @@ section {
   box-sizing: border-box;
 }
 
-/* ✅ smooth scroll */
+/* smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-body {
+body{ 
   background-color: #e8e8e3;
   color: #575155;
 }
@@ -66,9 +66,30 @@ nav {
   width: 100%;
 }
 
-/* ✅ hamburger icon لون أبيض */
 nav .navbar-toggler {
   border-color: rgba(255,255,255,0.5);
+}
+nav.scrolled {
+  background-color: #8a1a38 !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Fix hamburger icon color */
+nav .navbar-toggler-icon {
+  filter: brightness(10);
+}
+
+/* Mobile menu background */
+@media (max-width: 991px) {
+  nav .navbar-collapse {
+    background-color: #CE6D8B;
+    padding: 10px 15px;
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 /*Home*/
@@ -76,7 +97,7 @@ nav .navbar-toggler {
   padding: 150px;
 }
 
-/* ✅ fix Home padding على الموبايل */
+/* fix Home padding in mobile*/
 @media (max-width: 768px) {
   #Home .row {
     padding: 100px 20px 60px;
@@ -239,7 +260,7 @@ nav .navbar-toggler {
   box-shadow: rgba(55, 0, 10) 0px 6px 20px !important;
 }
 
-/*Technical Skills*/
+/* Skills*/
 #Skills .card {
   opacity: 0;
   transform: translateY(60px);
@@ -284,7 +305,52 @@ nav .navbar-toggler {
 .skill-circle:hover {
   transform: translateY(-5px);
 }
+/*soft skills*/
+.soft-skill-badge {
+    padding: 6px 14px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #fce8ee, #f5c6d6);
+    border: 1px solid #CE6D8B;
+    color: #681C3B;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
 
+.soft-skill-badge:hover {
+    background: linear-gradient(135deg, #CE6D8B, #681C3B);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(206, 109, 139, 0.4);
+}
+@media (max-width: 768px) {
+    #Skills { margin: 1rem !important; }
+    .skill-circle { width: 60px; height: 60px; }
+    .skill-circle img { width: 30px; height: 30px; }
+}
+/*Services*/
+#Services .card {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+#Services .card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#Services .col-md-4:nth-child(2) .card {
+  transition-delay: 0.2s;
+}
+
+#Services .col-md-4:nth-child(3) .card {
+  transition-delay: 0.4s;
+}
+
+#Services .card.visible:hover {
+  transform: scale(1.03);
+}
 /*Projects*/
 #Projects .filter-btn {
   padding: 8px 24px;
@@ -489,7 +555,6 @@ button.send-btn:active::before {
 }
 
 /* Social icons */
-/* Social icons - دواير */
 .icons-cont {
     width: 40px;
     height: 40px;
@@ -511,11 +576,14 @@ color: #fff;
 footer {
   min-height: 100px;
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5px;    
   --s: 100px;
   --c-inner: #681C3B;
   --c-outer: #CE6D8B;
   --c-outer2: #fce8ee82;
-
   background: radial-gradient(
     circle at 50% 99%,
     transparent 10%,

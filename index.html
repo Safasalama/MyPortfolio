@@ -19,6 +19,11 @@
         <nav class="navbar navbar-expand-lg text-white position-fixed">
             <div class="container">
                 <a class="navbar-brand fs-2 text-white pt-3" href="#Home">SAFA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
                 <div class="collapse navbar-collapse justify-content-end pt-3" id="navbarNavDropdown">
                     <ul class="navbar-nav gap-2">
                         <li class="nav-item">
@@ -29,6 +34,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase text-white" href="#Skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-white" href="#Services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase text-white" href="#Projects">Projects</a>
@@ -61,7 +69,7 @@
 
                     <div class="col-md-6 text-end">
                         <div class="image-slider">
-                            <img src="imgs/slider.png" alt="slider image" class="img-fluid">
+                            <img src="imgs/slider.png" alt="slider image" class="img-fluid" loading="lazy">
                         </div>
                     </div>
 
@@ -82,7 +90,8 @@
                         <div class="image-wrapper">
                             <div class="loader"></div>
                             <div class="card-image">
-                                <img class="card-img img-fluid" src="imgs/portfolio-image.png" alt="my photo">
+                                <img class="card-img img-fluid" src="imgs/portfolio-image.png" alt="my photo"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -172,9 +181,7 @@
                         <div class="box p-4 h-100 rounded-3" style="box-shadow: rgb(90, 1, 17) 0px 1px 4px;
                     background-color: #fce8ee82;">
                             <h3 class="text-center mb-4 fw-bolder">Certificates</h3>
-
                             <div class="cert d-flex align-items-start gap-3 mb-4">
-                                <i class="fa-solid fa-arrow-up-right-from-square fs-5 mt-1" style="color: #37000a;"></i>
                                 <div>
                                     <h5 class="mb-1">Java Full Stack</h5>
                                     <span class="text-muted small">
@@ -185,7 +192,6 @@
                             </div>
 
                             <div class="cert d-flex align-items-start gap-3">
-                                <i class="fa-solid fa-arrow-up-right-from-square fs-5 mt-1" style="color: #37000a;"></i>
                                 <div>
                                     <h5 class="mb-1">Development Using Android (Kotlin)</h5>
                                     <span class="text-muted small">
@@ -201,85 +207,152 @@
                 </div>
             </div>
         </section>
-        <!--Technical Skills-->
-        <section id="Skills" class="Technical Skills m-5">
+        <!-- Skills-->
+        <section id="Skills" class="Skills m-5">
             <div class="container">
                 <div class="main-heading text-center p-3">
-                    <h2>Technical Skills
-                    </h2>
+                    <h2>Skills</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card" style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                             <div class="card-body text-center">
-                                <h5 class="card-title mb-4 fw-bolder">Backend</h5>
+                                <h5 class="card-title mb-4">Backend</h5>
 
                                 <div class="d-flex flex-wrap justify-content-center gap-3">
 
                                     <div class="skill-circle">
-                                        <img src="imgs/mySql.png" alt="mysql">
+                                        <img src="imgs/mySql.png" alt="mysql" loading="lazy">
                                     </div>
 
                                     <div class="skill-circle">
-                                        <img src="imgs/java.png" alt="Java">
+                                        <img src="imgs/java.png" alt="Java" loading="lazy">
                                     </div>
 
                                     <div class="skill-circle">
-                                        <img src="imgs/kotlin.png" alt="kotlin">
+                                        <img src="imgs/kotlin.png" alt="kotlin" loading="lazy">
                                     </div>
 
                                     <div class="skill-circle">
-                                        <img src="imgs/springboot.png" alt="SpringBoot">
+                                        <img src="imgs/springboot.png" alt="SpringBoot" loading="lazy">
                                     </div>
                                     <div class="skill-circle">
-                                        <img src="imgs/python.png" alt="python">
+                                        <img src="imgs/python.png" alt="python" loading="lazy">
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card" style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-4">frontend</h5>
                                 <div class="d-flex flex-wrap justify-content-center gap-3">
 
                                     <div class="skill-circle">
-                                        <img src="imgs/html-icon.png" alt="html">
+                                        <img src="imgs/html-icon.png" alt="html" loading="lazy">
                                     </div>
 
                                     <div class="skill-circle">
-                                        <img src="imgs/css-icon.png" alt="css">
+                                        <img src="imgs/css-icon.png" alt="css" loading="lazy">
                                     </div>
 
                                     <div class="skill-circle">
-                                        <img src="imgs/javaScript.png" alt="javaScript">
+                                        <img src="imgs/javaScript.png" alt="javaScript" loading="lazy">
                                     </div>
                                     <div class="skill-circle">
-                                        <img src="imgs/bootstrap.png" alt="bootstrap">
+                                        <img src="imgs/bootstrap.png" alt="bootstrap" loading="lazy">
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card" style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-4">Other</h5>
                                 <div class="d-flex flex-wrap justify-content-center gap-3">
 
                                     <div class="skill-circle">
-                                        <img src="imgs/github.png" alt="github">
+                                        <img src="imgs/github.png" alt="github" loading="lazy">
                                     </div>
 
                                     <div class="skill-circle">
-                                        <img src="imgs/git.png" alt="git">
+                                        <img src="imgs/git.png" alt="git" loading="lazy">
                                     </div>
                                 </div>
-
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-4">Soft Skills</h5>
+                                <div class="d-flex flex-wrap justify-content-center gap-3">
+                                    <span class="soft-skill-badge">Creativity</span>
+                                    <span class="soft-skill-badge">Problem Solving</span>
+                                    <span class="soft-skill-badge">Team Work</span>
+                                    <span class="soft-skill-badge">Communication</span>
+                                    <span class="soft-skill-badge">Time Management</span>
+                                    <span class="soft-skill-badge">Fast Learner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Services-->
+        <section id="Services" class="py-5">
+            <div class="container">
+                <div class="main-heading text-center mb-5">
+                    <h2 class="fw-bold">Services</h2>
+                    <h4 class="fw-normal">What I Can Offer You?</h4>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card p-3 rounded-3 h-100"
+                            style="box-shadow: rgb(90, 1, 17) 0px 1px 4px; background-color: #fce8ee82;">
+                            <i class="fa-regular fa-window-maximize fs-2 mb-3" style="color: #37000a;"></i>
+                            <h4 class="service-title">Website Development</h4>
+                            <p class="service-desc">Custom, responsive websites built using clean HTML, CSS, JavaScript,
+                                and Bootstrap. Focused on performance, accessibility, and cross-device compatibility.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card p-3 rounded-3 h-100"
+                            style="box-shadow: rgb(90, 1, 17) 0px 1px 4px; background-color: #fce8ee82;">
+                            <i class="fa-regular fa-hand-pointer fs-2 mb-3" style="color: #37000a;"></i>
+                            <h4 class="service-title">Interactive Web Interfaces</h4>
+                            <p class="service-desc">Adding dynamic elements, animations, and smooth transitions using
+                                JavaScript to enhance user engagement and user experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card p-3 rounded-3 h-100"
+                            style="box-shadow: rgb(90, 1, 17) 0px 1px 4px; background-color: #fce8ee82;">
+                            <i class="fa-solid fa-code fs-2 mb-3" style="color: #37000a;"></i>
+                            <h4 class="service-title">Backend System Development</h4>
+                            <p class="service-desc">Developing secure and scalable backend applications using Java,
+                                Spring, and Servlets. Building and integrating RESTful APIs to connect frontend and
+                                backend systems smoothly.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card p-3 rounded-3 h-100"
+                            style="box-shadow: rgb(90, 1, 17) 0px 1px 4px; background-color: #fce8ee82;">
+                            <i class="fa-solid fa-database fs-2 mb-3" style="color: #37000a;"></i>
+                            <h4 class="service-title">Database Design & Management</h4>
+                            <p class="service-desc">Designing and managing relational databases using MySQL and JDBC to
+                                ensure data integrity and fast performance.</p>
                         </div>
                     </div>
                 </div>
@@ -307,10 +380,11 @@
                     <div class="col-md-4 project-item" data-category="backend">
                         <div class="project-card">
                             <div class="project-img">
-                                <img src="imgs/project1.png" alt="Project 1">
+                                <img src="imgs/project1.png" alt="Project 1" loading="lazy">
                                 <div class="project-overlay">
                                     <a href="https://github.com/Safasalama/Service-Provider-Recommendation-System-"
-                                        target="_blank" class="overlay-btn">
+                                        target="_blank" class="overlay-btn" aria-label="GitHub Profile"
+                                        rel="noopener noreferrer">
                                         <i class="fa-brands fa-github"></i> GitHub
                                     </a>
 
@@ -330,15 +404,14 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Project Card 2 -->
                     <div class="col-md-4 project-item" data-category="frontend">
                         <div class="project-card">
                             <div class="project-img">
-                                <img src="imgs/project2.png" alt="Project 2">
+                                <img src="imgs/project2.png" alt="Project 2" loading="lazy">
                                 <div class="project-overlay">
-                                    <a href="https://github.com/Safasalama/DevFolio" target="_blank"
-                                        class="overlay-btn">
+                                    <a href="https://github.com/Safasalama/DevFolio" target="_blank" class="overlay-btn"
+                                        aria-label="GitHub Profile" rel="noopener noreferrer">
                                         <i class="fa-brands fa-github"></i> GitHub
                                     </a>
                                     <a href="https://safasalama.github.io/DevFolio/" target="_blank"
@@ -365,9 +438,10 @@
                     <div class="col-md-4 project-item" data-category="frontend">
                         <div class="project-card">
                             <div class="project-img">
-                                <img src="imgs/project3.png" alt="Project 3">
+                                <img src="imgs/project3.png" alt="Project 3" loading="lazy">
                                 <div class="project-overlay">
-                                    <a href="https://github.com/Safasalama/globaly" target="_blank" class="overlay-btn">
+                                    <a href="https://github.com/Safasalama/globaly" target="_blank" class="overlay-btn"
+                                        aria-label="GitHub Profile" rel="noopener noreferrer">
                                         <i class="fa-brands fa-github"></i> GitHub
                                     </a>
                                     <a href="https://safasalama.github.io/globaly/" target="_blank" class="overlay-btn">
@@ -459,7 +533,8 @@
                                             class="icons-cont me-2 rounded-circle d-flex justify-content-center align-items-center text-decoration-none">
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/safa-ahmed-salama/" target="_blank" class="icons-cont me-2 rounded-circle d-flex justify-content-center align-items-center text-decoration-none" >
+                                        <a href="https://www.linkedin.com/in/safa-ahmed-salama/" target="_blank"
+                                            class="icons-cont me-2 rounded-circle d-flex justify-content-center align-items-center text-decoration-none">
                                             <i class="fab fa-linkedin-in"></i>
                                         </a>
                                         <a href="https://github.com/Safasalama" target="_blank"
@@ -475,14 +550,13 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="container m-0 p-0">
-                <p class="text-center d-flex justify-content-center align-items-center"
-                    style="color:#CE6D8B; font-weight:600;">© 2026 Safa Salama. All rights reserved.</p>
-            </div>
-        </footer>
     </main>
-
+    <footer>
+        <div class="container m-0 p-0">
+            <p class="text-center d-flex justify-content-center align-items-center"
+                style="color:#CE6D8B; font-weight:600;">© 2026 Safa Salama. All rights reserved.</p>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
